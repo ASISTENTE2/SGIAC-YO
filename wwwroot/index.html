@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGIAC | Gestión de Inventario</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #f8fafc;
+        }
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background-color: var(--bg);
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        /*Yupanqui*/
+        .card {
+            background: rgb(180, 180, 180);
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+        }
+        .logo {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        h1 { color: #1e293b; margin: 0; font-size: 1.5rem; }
+        p { color: #64748b; line-height: 1.5; }
+        
+        
+        df-messenger {
+            --df-messenger-button-titlebar-color: var(--primary);
+            --df-messenger-chat-background-color: #ffffff;
+            --df-messenger-font-family: 'Segoe UI';
+            --df-messenger-send-icon: var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="logo">📦</div>
+        <h1>SGIAC Inteligente</h1>
+        <p>Bienvenido al control de inventario. Haz clic en el asistente azul para consultar stock en tiempo real.</p>
+    </div>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="SGIAC - Asistente"
+      agent-id="f6c1e26b-bd1f-4777-9c9f-c9b94cfc4397"
+      language-code="es"
+    ></df-messenger>
+
+</body>
+</html>
